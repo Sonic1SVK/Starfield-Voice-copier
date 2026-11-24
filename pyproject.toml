@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sf-papyrus-tool"
+version = "0.1.0"
+description = "Modern cross-platform GUI for compiling and decompiling Starfield Papyrus scripts"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "Jakub" }]
+keywords = ["starfield", "papyrus", "modding", "gui", "qt"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Environment :: X11 Applications :: Qt",
+    "Topic :: Games/Entertainment",
+]
+dependencies = ["PySide6>=6.6"]
+
+[project.scripts]
+sf-papyrus-tool = "sf_papyrus_tool.__main__:main"
+
+[project.gui-scripts]
+sf-papyrus-tool-gui = "sf_papyrus_tool.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

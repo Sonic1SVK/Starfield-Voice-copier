@@ -1,0 +1,112 @@
+1
+00:00:00,000 --> 00:00:10,000
+Character lines. Rossie is a woman—let’s turn her into a man.
+
+2
+00:01:21,714 --> 00:01:31,714
+The model is starting to load into VRAM; this might take a few minutes on the first run. Keep an eye on GPU usage.
+
+3
+00:02:43,429 --> 00:02:53,429
+In the meantime, let’s process the character lines. The first 16 lines are already underway—that’s the first batch.
+
+4
+00:04:05,143 --> 00:04:15,143
+I had to reduce the batch size because the VRAM was overflowing. If you set the batch size too high,
+
+5
+00:05:26,857 --> 00:05:36,857
+the GPU can’t keep up and starts using the PC’s system RAM, which you’ll definitely notice—the system will start swapping.
+
+6
+00:06:48,571 --> 00:06:58,571
+That’s better now. The batch size was too big. We’re at 45—halfway there.
+
+7
+00:08:10,286 --> 00:08:20,286
+Finding the right balance for your specific hardware takes a bit of time; it’s not just a "press a button and forget about it"
+
+8
+00:09:32,000 --> 00:09:42,000
+kind of thing. We’re at 81 out of 112, with about 51 seconds left. Done! 128 lines in about 8 minutes—including my own testing.
+
+9
+00:10:53,714 --> 00:11:03,714
+It doesn’t sound drunk; let’s change that—we’ll switch to mode C.
+
+10
+00:12:15,429 --> 00:12:25,429
+If you change the voice, you have to overwrite the previously generated .wav files.
+
+11
+00:13:37,143 --> 00:13:47,143
+The video is already 26 minutes of pure boredom, but hey, you asked for a tutorial, so here it is! :D We’re halfway through.
+
+12
+00:14:58,857 --> 00:15:08,857
+At least you get to see how to troubleshoot issues—63 out of 128 done. It’s all about getting the settings right.
+
+13
+00:16:20,571 --> 00:16:30,571
+On a CPU, 128 lines would probably take an hour or so. We’re almost finished; I’ll play them back in a moment.
+
+14
+00:17:42,286 --> 00:17:52,286
+Let me listen to a few. It should sound fine now.
+
+15
+00:19:04,000 --> 00:19:14,000
+I mean, if that didn’t sound like a drunk person, I honestly don’t know what does! :D Let me play it again.
+
+16
+00:20:25,714 --> 00:20:35,714
+If you want it to sound even more like a drunk person, you’ll need to write it that way in the dialogue itself.
+
+17
+00:21:47,429 --> 00:21:57,429
+If you write it the way the AI wrote it in the prompt, that’s exactly how it’s going to sound. "Ah, hold on...
+
+18
+00:23:09,143 --> 00:23:19,143
+hold on a second, lads, listen to this—you're never gonna believe it! I was just...
+
+19
+00:24:30,857 --> 00:24:40,857
+just sitting there in the Astral Lounge, right? Minding me own business, having a quiet little sip of Bog's Grog...
+
+20
+00:25:52,571 --> 00:26:02,571
+when this, this absolute gobshite from New Atlantis knocks me Chunks right off the table! Straight onto the floor! Well, I...
+
+21
+00:27:14,286 --> 00:27:24,286
+I completely lost the head, didn't I?
+
+22
+00:28:35,1000 --> 00:28:45,1000
+Threw a wild right hook, smashed three chairs, and next thing I know—hic—half of Neon security is chasing me down the docks!
+
+23
+00:29:57,714 --> 00:30:07,714
+Still got me drink though... ha! Best night in the Settled Systems, I swear to God!" Get it? Alright, jokes aside.
+
+24
+00:31:19,429 --> 00:31:29,429
+Hopefully, that helped you out. It was a bit of a bore,
+
+25
+00:32:41,143 --> 00:32:51,143
+but I can show you how to create .wem files and generate facial expressions using FaceGen via the Creation Kit (CK).
+
+26
+00:34:02,857 --> 00:34:12,857
+It’s lip-syncing—meaning the character will react and articulate according to the text. So,
+
+27
+00:35:24,571 --> 00:35:34,571
+if you write it correctly—for instance,
+
+28
+00:36:46,286 --> 00:36:56,286
+specifying that the character is very angry—they’ll have both the voice and the facial expression to match. That’s a wrap!
+

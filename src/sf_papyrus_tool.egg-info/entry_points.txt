@@ -1,0 +1,5 @@
+[console_scripts]
+sf-papyrus-tool = sf_papyrus_tool.__main__:main
+
+[gui_scripts]
+sf-papyrus-tool-gui = sf_papyrus_tool.__main__:main

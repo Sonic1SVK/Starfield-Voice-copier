@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/sf_papyrus_tool/__init__.py
+src/sf_papyrus_tool/__main__.py
+src/sf_papyrus_tool/config.py
+src/sf_papyrus_tool/main_window.py
+src/sf_papyrus_tool/postprocess.py
+src/sf_papyrus_tool/tools.py
+src/sf_papyrus_tool/workers.py
+src/sf_papyrus_tool.egg-info/PKG-INFO
+src/sf_papyrus_tool.egg-info/SOURCES.txt
+src/sf_papyrus_tool.egg-info/dependency_links.txt
+src/sf_papyrus_tool.egg-info/entry_points.txt
+src/sf_papyrus_tool.egg-info/requires.txt
+src/sf_papyrus_tool.egg-info/top_level.txt

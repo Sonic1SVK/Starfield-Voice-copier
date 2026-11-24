@@ -1,0 +1,54 @@
+Metadata-Version: 2.4
+Name: sf-papyrus-tool
+Version: 0.1.0
+Summary: Modern cross-platform GUI for compiling and decompiling Starfield Papyrus scripts
+Author: Jakub
+License: MIT
+Keywords: starfield,papyrus,modding,gui,qt
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Topic :: Games/Entertainment
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PySide6>=6.6
+Dynamic: license-file
+
+# Starfield Papyrus Tool
+
+Modern, cross-platform (Windows / Linux / macOS) GUI for decompiling and
+compiling **Starfield Papyrus** scripts (`.pex` ↔ `.psc`).
+
+## Why this exists
+
+Existing tools are either `.bat` scripts or 10-year-old WinForms apps. This
+project gives you a single clean Qt-based UI that:
+
+- Decompiles `.pex` → `.psc` via **Champollion**
+- Compiles `.psc` → `.pex` via **Caprica** (MIT) or **PapyrusCompiler**
+- Applies safe **Starfield post-processing** on decompiled output
+- Saves your tool paths and settings across sessions
+
+## Requirements
+
+- Python 3.10+
+- **Champollion** (v1.3.2+ for Starfield) – build from
+  <https://github.com/Orvid/Champollion> or grab a release binary
+- **Caprica** (MIT) – <https://github.com/Orvid/Caprica>
+  *or* the `PapyrusCompiler.exe` bundled with Starfield's Creation Kit
+- Extracted vanilla Starfield `.psc` sources (from `Starfield - Misc.ba2`)
+  as your **Import directory** for compilation
+
+## Install
+
+```bash
+git clone <this-repo>
+cd starfield-papyrus-tool
+python -m venv .venv
+# Windows:
+.venv\Scripts\activate
+# Linux/macOS:
+source .venv/bin/activate
+
+pip install -e .
